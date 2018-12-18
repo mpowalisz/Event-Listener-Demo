@@ -6,60 +6,42 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- jQuery CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <h3>Total</h3>
     <div id="total">0</div>
+    <btn id="img-1">
+      <img
+        class="gem"
+        id="placeholder-1"
+        src="https://via.placeholder.com/150"
+        alt="placeholder"
+      />
+    </btn>
+    <div id="img-2">
+      <img
+        class="gem"
+        src="https://via.placeholder.com/150"
+        alt="placeholder"
+      />
+    </div>
+    <div id="img-3">
+      <img
+        class="gem"
+        src="https://via.placeholder.com/150"
+        alt="placeholder"
+      />
+    </div>
+    <div id="img-4">
+      <img
+        class="gem"
+        src="https://via.placeholder.com/150"
+        alt="placeholder"
+      />
+    </div>
 
-    <img
-      class="img"
-      id="placeholder-1"
-      src="https://via.placeholder.com/150"
-      alt="placeholder"
-    />
-
-    <img
-      class="img"
-      id="placeholder-2"
-      src="https://via.placeholder.com/150"
-      alt="placeholder"
-    />
-
-    <img
-      class="img"
-      id="placeholder-3"
-      src="https://via.placeholder.com/150"
-      alt="placeholder"
-    />
-
-    <img
-      class="img"
-      id="placeholder-4"
-      src="https://via.placeholder.com/150"
-      alt="placeholder"
-    />
-
-    <script>
-      $(document).ready(function() {
-        // For loop to loop over images
-        for (i = 1; i < 5; i++) {
-          // Assign a random value
-          var random = Math.floor(Math.random() * 11 + 1);
-          $("#placeholder-" + i).attr("value", random);
-        }
-
-        // On click event listener for class of img
-        $(".img").on("click", function() {
-          var imgVal = $(this).val();
-          console.log("The value of the image was " + imgVal);
-          $("#total").text();
-        });
-      });
-    </script>
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
